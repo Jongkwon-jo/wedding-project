@@ -10,11 +10,11 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta property="og:url" content="https://wedding.duveen.me">
+    <meta property="og:url" content="https://jongkwon-jo.github.io/wedding-project/">
     <meta property="og:title" content="종권 ♥ 영은 결혼식에 초대합니다.">
     <meta property="og:site_name" content="종권 ♥ 영은 결혼식에 초대합니다.">
     <meta property="og:description" content="6월 7일 오후 1시 40분">
-    <meta property="og:image" content="https://wedding.duveen.me/assets/images/opengraph.png">
+    <meta property="og:image" content="https://jongkwon-jo.github.io/wedding-project/assets/images/opengraph.png">
     <meta property="og:type" content="website">
     <title>종권 ♥ 영은 결혼식에 초대합니다.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -84,7 +84,7 @@
     </section>
 
     <section id="mainSection4">
-        <img src="./assets/images/sub1.png" alt="민규♥소망 웨딩사진" style="display: block"/>
+        <img src="./assets/images/sub1.png" alt="종권♥영은 웨딩사진" style="display: block"/>
         <section class="bg-primary-alpha">
             <div class="text-center member-wrapper">
                 <p>
@@ -1512,13 +1512,13 @@
 <script>
     let container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
     let options = { //지도를 생성할 때 필요한 기본 옵션
-        center: new kakao.maps.LatLng(37.48180465471006, 126.7984950161044), //지도의 중심좌표.
+        center: new kakao.maps.LatLng(35.223251109806895, 128.68047979336092), //지도의 중심좌표.
         level: 3 //지도의 레벨(확대, 축소 정도)
     };
 
     let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
 
-    let markerPosition = new kakao.maps.LatLng(37.48180465471006, 126.7984950161044);
+    let markerPosition = new kakao.maps.LatLng(35.223251109806895, 128.68047979336092);
 
     // 마커를 생성합니다
     let marker = new kakao.maps.Marker({
@@ -1538,18 +1538,18 @@
             content: {
                 title: '종권 ♥ 영은 결혼식에 초대합니다.',
                 description: '6월 7일 토요일 오후 1시 40분\n창원리베라컨벤션 10층 아르덴하우스',
-                imageUrl: 'https://wedding.duveen.me/assets/images/main.png',
+                imageUrl: 'https://jongkwon-jo.github.io/wedding-project/assets/images/main.png',
                 link: {
-                    mobileWebUrl: 'https://wedding.duveen.me',
-                    webUrl: 'https://wedding.duveen.me',
+                    mobileWebUrl: 'https://jongkwon-jo.github.io/wedding-project',
+                    webUrl: 'https://jongkwon-jo.github.io/wedding-project',
                 },
             },
             buttons: [
                 {
                     title: '모바일 청첩장 보기',
                     link: {
-                        mobileWebUrl: 'https://wedding.duveen.me',
-                        webUrl: 'https://wedding.duveen.me',
+                        mobileWebUrl: 'https://jongkwon-jo.github.io/wedding-project',
+                        webUrl: 'https://jongkwon-jo.github.io/wedding-project',
                     },
                 },
             ],
@@ -1557,7 +1557,7 @@
     }
     function shareToLink() {
         if (navigator && navigator.clipboard) {
-            navigator.clipboard.writeText("https://wedding.duveen.me").then(res => {
+            navigator.clipboard.writeText("https://jongkwon-jo.github.io/wedding-project").then(res => {
                 alert("주소가 복사되었습니다.\n필요한 곳에 붙여넣기 하세요.");
             }).catch(err => {
                 alert("복사에 실패 했습니다.");
