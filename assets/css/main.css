@@ -9,7 +9,7 @@ body {
     padding: 0;
     background: #444444;
     touch-action: pan-y;
-    font-family: "Gowun Dodum", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -48,7 +48,7 @@ input, textarea {
     height: 2.5rem;
     color: #000;
     font-size: .95rem;
-    font-family: "Gowun Dodum", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     letter-spacing: -0.4px;
     outline: none;
     appearance: none;
@@ -69,7 +69,7 @@ button {
     font-weight: 400;
     cursor: pointer;
     letter-spacing: 0 !important;
-    font-family: "Gowun Dodum", sans-serif;
+    font-family: "Noto Sans", sans-serif;
     color: black;
 }
 
@@ -105,7 +105,7 @@ button.dismiss {
 }
 
 .mdi.big {
-font-size: 1rem;
+    font-size: 1rem;
 }
 
 input::placeholder, textarea::placeholder {
