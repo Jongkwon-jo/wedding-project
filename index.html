@@ -783,7 +783,7 @@
                 <div class="text" style="display: none; height: 0">
                     <div class="inner">
                         <span>
-                            <span class="bank">기업</span> <span>312-073124-01-019</span>
+                            <span class="bank">기업</span> <span>580-013951-01-015</span>
                         </span>
                         <br>
                         <span>조성호</span>
@@ -1014,13 +1014,22 @@
     }
 
     let today = new Date();
-    let futureDate = new Date('2025-06-08');
+    today.setHours(0, 0, 0, 0);  // 현재 날짜의 시간을 00:00:00으로 설정
+
+    let futureDate = new Date(2025, 5, 7);  // 월은 0부터 시작하므로 5는 6월
+    futureDate.setHours(0, 0, 0, 0);  // 미래 날짜의 시간도 00:00:00으로 설정
+
     let diffTimestamp = futureDate - today;
-    let diffInDays = diffTimestamp / 1000 / 60 / 60 / 24;
-    diffInDays = Math.floor(diffInDays);
+    let diffInDays = Math.floor(diffTimestamp / (1000 * 60 * 60 * 24));
+
     if (diffInDays < 0) diffInDays = 0;
 
-    document.getElementById('remainingDays').innerHTML = diffInDays
+    let element = document.getElementById('remainingDays');
+    if (element) {
+        element.innerHTML = diffInDays;
+    } else {
+        console.warn("Element with ID 'remainingDays' not found.");
+    }
 
     function copyAccountToClipboard(account) {
         navigator.clipboard.writeText(account).then(() => {
